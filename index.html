@@ -1,50 +1,52 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="author-name">Pradnya Lingga Kumara</div>
-    <div class="todo-container">
-        <h1>Todo List</h1>
+    <div class="author-name">Made with a headache and lots of coffee</div>
+  <div class="todo-container">
+    <h1>Todo List</h1>
         <div class="input-section">
-        <div class="input-group">
-            <label for="task-input">Tugas</label>
-            <input type="text" id="task-input">
-        </div>
-    <div class="input-group">
+      <div class="input-group">
+        <label for="task-input">Tugas</label>
+        <input type="text" id="task-input" placeholder="Ketik tugasmu disini...">
+      </div>
+      <div class="input-group">
         <label for="date-input">Tenggat Waktu</label>
         <input type="date" id="date-input">
-    </div>
-    <button id="add-btn">Add</button>
+      </div>
+      <button id="add-btn">Add</button>
     </div>
 
     <div class="action-buttons">
-        <div class="left-buttons">
+      <div class="left-buttons">
+        <input type="text" id="search-box" placeholder="Cari tugas...">
         <button id="filter-btn">Filter</button>
-    </div>
-    <div class="right-buttons">
+        <button id="reset-filter-btn" class="btn-warning">Reset Filter</button>
+      </div>
+      <div class="right-buttons">
         <button id="delete-all-btn">Delete All</button>
+      </div>
     </div>
 
     <table>
-        <thead>
-            <tr>
-                <th>Task</th>
-                <th>Due date</th>
-                <th>Status</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody id="task-table">
-            <tr><td colspan="4">Tidak ada Task</td></tr>
-        </tbody>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="task-table">
+        <tr><td colspan="4">Tidak ada list tugas</td></tr>
+      </tbody>
     </table>
-    </div>
+  </div>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
