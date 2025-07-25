@@ -1,0 +1,111 @@
+body {
+    background-color: #111;
+    color: #00ff99;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-container {
+    background: #222;
+    border: 2px solid #00ff99;
+    border-radius: 8px;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 0 20px #00ff99;
+    position: relative;
+}
+
+.author-name {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff99;
+    font-size: 14px;
+    text-shadow: 0 0 8px #00ff99;
+    z-index: 9999;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px #00ff99;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: flex-end;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+input[type="text"], input[type="date"] {
+    background: #111;
+    border: 1px solid #00ff99;
+    color: #00ff99;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    background: #111;
+    color: #00ff99;
+    border: 1px solid #00ff99;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background 0.3s;
+}
+
+#add-btn {
+    height: 100%;
+    font-size: 12px;
+}
+
+.left-buttons {
+    display: flex;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #00ff99;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #111;
+}
+
+.status-completed {
+    color: #ff0066;
+}
+
+.status-pending {
+    color: #00ff99;
+}
+
+
+    
