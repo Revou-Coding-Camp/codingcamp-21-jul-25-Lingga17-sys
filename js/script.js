@@ -31,7 +31,7 @@ function renderTasks(filteredTasks = null) {
         ${task.completed ? 'Selesai' : 'Belum Selesai'}
       </td>
       <td>
-        <button onclick="toggleStatus(${index})">✔</button>
+        <button onclick="toggleStatus(${index})">Selesai</button>
         <button onclick="editTask(${index})">Edit</button>
         <button onclick="deleteTask(${index})">Del</button>
       </td>
